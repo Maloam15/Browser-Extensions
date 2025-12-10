@@ -1,0 +1,91 @@
+body {
+    font-family: 'Arial', sans-serif;
+    width: 320px;
+    padding: 20px;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #f06, #0ff); 
+  }
+  
+  .container {
+    background: linear-gradient(135deg, #ff7e5f, #feb47b); 
+    border-radius: 15px; 
+    padding: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 1s ease-in;
+  }
+  
+  h1 {
+    font-family: 'Great Vibes', cursive; 
+    font-size: 30px;
+    color: #333;
+    text-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    margin-bottom: 20px;
+    animation: magicText 3s ease-in-out infinite; 
+  }
+  
+  textarea {
+    width: 100%;
+    height: 120px;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 10px; 
+    border: 2px solid #fff;
+    font-size: 14px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    resize: none;
+    transition: border-color 0.3s ease;
+  }
+  
+  textarea:focus {
+    border-color: #f06; 
+  }
+  
+  button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px; 
+    background: linear-gradient(45deg, #ff6b6b, #f9cb28); 
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: background 0.3s ease, transform 0.2s ease;
+  }
+  
+  button:hover {
+    background: linear-gradient(45deg, #f9cb28, #ff6b6b); 
+    transform: scale(1.05); 
+  }
+  
+  button:active {
+    background: linear-gradient(45deg, #f9cb28, #ff6b6b);
+    box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.3);
+    transform: scale(0.95); 
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes magicText {
+    0%, 100% {
+      text-shadow: 0 0 5px #f06, 0 0 10px #f06, 0 0 15px #f06, 0 0 20px #0ff, 0 0 25px #0ff, 0 0 30px #0ff, 0 0 35px #0ff;
+    }
+    50% {
+      text-shadow: 0 0 5px #f06, 0 0 10px #f06, 0 0 15px #0ff, 0 0 20px #f06, 0 0 25px #0ff, 0 0 30px #f06, 0 0 35px #0ff;
+    }
+  }
+  
